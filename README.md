@@ -2,4 +2,6 @@
 
 The Web Developer Bootcamp
 
-MDM: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+MDM: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element>
+
+Emmet Documentation for HTML shortcuts: <https://docs.emmet.io/cheat-sheet/>
