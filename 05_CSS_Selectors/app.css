@@ -1,0 +1,116 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,h2 {
+    color: #1d3557;
+}
+
+/* use "#" to specify unique id */
+#signup{
+    background-color: #203d64;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+/* use "." for class, such as in the <span class="tag"> */
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+/* all anchor text inside the class post - Descendent Selector */
+.post a {
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* all anchor text inside of the footer - Descendent Selector*/
+footer a {
+    color: #e63946;
+}
+
+/* Adjacent selector: select only the buttons immediately preceded by an h2 */
+h2 + button {
+    font-size: 20px;
+}
+
+/* Direct Child: select only the a that are direct children of a footer */
+footer > a {
+    color: #f0d958;
+}
+
+/* Attribute Selector: input elements where the type attribute is set to password */
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* Attribute Selector: "*=" fuzzy selector */
+a[href*="google"]{
+    color: #2779ec;
+}
+
+/* Pseudo-class */
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-class */
+.post button:active {
+    background-color: #c30222c7 !important;
+}
+/* !importance wins the cascade of styles
+the order of the styles declared matters */
+
+/* Pseudo-class */
+.post button:hover {
+    background-color: #df8c92;
+    color: #f1faee;
+}
+/* this above one wins the below one because specificity rules */
+/* Inline Styles > ID > class > element */
+
+/* Pseudo-class */
+button:hover {
+    background-color: olive;
+}
+
+button {
+    background-color: #0a9396;
+    /* !important */
+}
+
+/* Pseudo-class */
+.post:nth-of-type(2n){
+    background-color: #dfe8dc;
+}
+
+/* Pseudo element */
+h2::first-letter {
+    font-size: 50px;
+}
+
+/* Pseudo element */
+p::first-line {
+    color: rgb(103, 132, 170);
+}
+
+/* Pseudo element */
+p::selection {
+    background-color: #fcbf49;
+}
+
